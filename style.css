@@ -1,0 +1,271 @@
+* {
+	margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    font-size: 17pt;
+    font-family: 'Russo One', Helvetica;
+    margin: 0 auto;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-shadow: none;
+}
+
+h1 {
+    align-self: center;
+}
+
+header{
+    background-color: #FF7F15;
+    color: white;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+}
+ 
+header .title {
+    font-size: 2em;
+    margin-top: -5px;
+    display: inline-block;
+    text-shadow: 2px 2px 2px black;
+}
+
+header .title img {
+    width: 50px;
+    height: 55px;
+    margin-bottom: -10px;
+}
+
+header a {
+    display: inline-block;
+    margin: 15px 20px 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+.nav {
+    flex-grow: 1;
+    text-align: right;
+    overflow: hidden;
+    text-shadow: 2px 2px 2px black;
+}
+
+#selected {
+    color: black;
+    text-shadow: 2px 2px 2px rgba(63,107,169, 0.3);
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbutton {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: inherit;
+    margin: 15px 20px 10px 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.dropdown .dropbutton:hover, .fas:hover {
+    color: black;
+    text-shadow: none;
+}
+
+.dropbutton-focus {
+    background-color: white !important;
+    color: black !important;
+    text-shadow: none !important;
+}
+
+.dropdown-content {
+    display: none;
+    font-size: 0.7em;
+    margin-left:1.2%!important;
+    margin-top: 0.6%!important;
+    position: absolute;
+    font-family: 'Aldrich', sans-serif;
+    text-shadow: none;
+    background-color: white;
+    min-width: 175px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 10px;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+	margin: 0 auto -20px;
+}
+
+#pics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 20px;
+}
+
+#pics img {
+    width: 380px;
+    height: 280px;
+    transition: all 0.5s;
+}
+
+#pics img:hover {
+    transform: scale(1.05)
+}
+
+.card {
+    height: 280px;
+    width: 380px;
+    margin: 10px;
+}
+
+.card .back {
+    background-color: white;
+    font-size: 0.8em;
+    font-family: 'Aldrich', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.card-title {
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    background-color: #FF7F15;
+    color: white;
+    padding: 5px;
+}
+
+table {
+    border: none;
+    border-spacing: 0;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2
+}
+
+.moreinfo-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-family: 'Aldrich', sans-serif;
+    padding: 5px;
+    background-color: #FF7F15;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.moreinfo-button:hover {
+    background-color: orange;
+}
+
+.carinfo-modal {
+    display: none;
+    position: fixed;
+    height: 100%; 
+    width: 100%;  
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.carinfo-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    overflow: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#wrapper:after {
+    content: "";
+}
+
+footer, #wrapper:after {
+    height: 20px; 
+}
+
+footer {
+    clear:both;
+    align-self: flex-start;
+    padding: 5px;
+    background-color: #66ccff;
+    color: white;
+    font-size: 0.8em;
+    font-family: 'Aldrich', sans-serif;
+    text-align: right;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.5);
+}
+

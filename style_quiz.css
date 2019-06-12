@@ -1,0 +1,243 @@
+/* CSS for quiz.html */
+
+#quiz-wrap { 
+    font-family: 'Aldrich', sans-serif; 
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.index-sell, .index-headline {
+    color: white;
+}
+
+.index-headline {
+    font-size: 1.5em;
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+}
+
+.index-sell {
+    font-size: 1em;
+}
+
+.take-quiz-btn, .results-button{
+    -webkit-appearance: none;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Russo One', Helvetica;
+}
+
+.index-btn {
+    height: 49px;
+    width: 259px;
+}
+
+.quiz-overlay, .result {
+    height: 380px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+#start-quiz {
+    margin-top: 25px;
+}
+
+.quiz-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.quiz-grid-item{
+    text-align: center;
+    padding: 25px;
+}
+
+.index .quiz-overlay, .quiz-overlay { 
+    background-color: #FF7F15;
+}
+
+/* CSS for test.php */
+
+#quiz {
+    margin: 0;
+    margin-left: -45px;
+    padding: 0 0 0 1px;
+    position: relative;
+    transition: all linear .35s;
+    font-family: 'Aldrich', sans-serif;
+}
+
+#quiz .final-message {
+    color: white;
+    font-size: 35px;
+    padding: 70px 0 0 0;
+}
+
+.test-question, .test-end {
+    height: 380px;
+    margin: 25px 0 95px 0;
+    max-height: 380px;
+    min-height: 380px;
+}
+
+.test-question div.quiz-overlay, .test-end div.quiz-overlay { 
+    margin: 0; 
+}
+
+.test-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.test-message {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#quiz h3 {
+    color: white;
+    font-size: 25px; 
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.test-question div, .test-end div {
+    color: black;
+    font-size: 20px;
+    margin: 0px 0;
+    padding: 1px 0;
+}
+
+#quiz input {
+    opacity: 0;
+    vertical-align: middle;
+    width: 20px;
+}
+
+#quiz label {
+    background-color: white; 
+    cursor: pointer;
+    display: block;
+    z-index: 99;
+}
+
+#quiz label {
+    height: 35px; 
+    font-size: 20px;  
+    line-height: 3em;
+    max-width: 476px;
+    min-width: 476px;
+    margin-top: -5px;
+    margin-left: 300px;
+    padding: 0 0 15px 16px;
+    width: 476px;
+}
+
+#quiz input#submit-quiz {
+    -webkit-appearance: none;
+    background: white; 
+    border: none;
+    color: black;
+    font-family: 'Russo One', Helvetica;
+    font-size: 1.2em;
+    height: 60px;
+    opacity: 1;
+    margin-top: 50px;
+    margin-left: 300px;
+    text-transform: uppercase;
+    width: 220px;
+}
+
+#quiz label:hover, #quiz input[type=radio]:checked + label, #quiz input#submit-quiz:hover, .results-button:hover, .take-quiz-btn:hover {
+    background: black; 
+    color: white;
+}
+
+#quiz .quiz-progress {
+    color: white;
+    font-size: 25px;
+    padding: 0 30px 0 0; 
+    text-align: right;
+    margin-top: -15px;
+}
+
+.nomargin { margin: 0;}
+
+/* CSS for results.php */
+
+#results-wrap { 
+    font-family: 'Aldrich', sans-serif; 
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    background-color: #FF7F15;
+}
+.results-overlay {
+    margin-top: 25px;
+    margin-right: 100px;
+    position: relative;
+    width: 80%;
+}
+.results-img {
+    border: 4px solid white;
+    margin-left: 50px;
+    margin-top: 25px;
+    position: absolute;
+    top: -30px;
+    max-width: 500px;
+    max-height: 400px;
+    transition: all 0.25s;
+}
+
+.results-img:hover {
+    transform: scale(1.05)
+}
+
+.results-content {
+    color: white; 
+    margin-left: 620px;
+    width: 50%;
+    font-size: 20px;
+    line-height: 21px;
+    text-shadow: 1px 1px rgba(2,3,5,.666);
+}
+.results-content .score {
+    color: white; 
+    font-size: 2em; 
+    line-height: 30px; 
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.results-text {
+    padding: 5px 35px 30px 215px;
+    color: white;
+}
+.score-details {
+    font-size: 20px; 
+    line-height: 25px;
+    text-shadow: none;
+}
+.results-button {
+    display: block;
+    height: 46px;
+    max-width: 250px;
+    line-height: 46px;
+    margin: 15px 0 0 0;
+    padding: 0;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AvtoVAZ</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="style_quiz.css" />
+<!--        for icons such as angle-down-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Russo+One|Aldrich" rel="stylesheet">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+       
+    </head>
+    
+    <body class="QuizPage">
+    
+       <header>
+            <div class="title">
+                AvtoVAZ <img src="pics/lada-logo.png" /> Classic Russian Cars
+            </div>
+
+            <div class="nav">
+		<a href="index.html">HOME</a>
+		<a href="#"><span id="selected">QUIZ</span></a>
+                <div class="dropdown">
+                    <button class="dropbutton">SOURCES <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="SourcesDropdown">
+                        <a href="http://avteon.ru/catalog/vaz" target="_blank">avteon.ru</a>
+                        <a href="http://autoussr.com/vaz" target="_blank">autoussr.com</a>
+                        <a href="https://classic-vaz.info/modeli/" target="_blank">classic-vaz.info</a>
+                        <a href="https://www.zr.ru/content/articles/356531-istorija_zhigulej_simvol_minuvshego_veka/" target="_blank">zr.ru</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+ 
+        <div id="quiz-wrap">
+            
+            <form id="start-quiz" method="post" action="test.php">
+                <div class="overlay index">
+	            <div class="quiz-overlay"></div>
+		    <div class="quiz-grid-container">
+		        <div class="quiz-grid-item"></div>
+		        <div class="quiz-grid-item">
+			    <h1 class="index-headline">Which AvtoVAZ car suits you?</h1>
+		        </div>
+			<div class="quiz-grid-item"></div>
+			<div class="quiz-grid-item"></div>
+			<div class="quiz-grid-item">
+				<p class="index-sell">Take this quiz to find a VAZ that suits your needs!</p>
+			</div>
+			<div class="quiz-grid-item"></div>
+			<div class="quiz-grid-item"></div>
+			<div class="quiz-grid-item">
+				<input type="submit" id="submit" class="take-quiz-btn index-btn" value="Take The Quiz" />
+			</div>
+			<div class="quiz-grid-item"></div>
+		    </div>
+		</div>    
+            </form>
+            
+        </div>	
+
+    </body>
+</html>
